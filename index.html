@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions JavaScript 1</title>
+</head>
+<body>
+    <h1>JS Questions - 1</h1>
+    <b>Ques 1. Add two Numbers
+        You are provided with two numbers 
+        A
+         and 
+        B
+        . Your task is to add these two numbers. </b><br>
+    <pre><b>Ans.</b>
+        const AddTwoNumbers = (a,b) => {
+            return a+b;
+        };
+        
+    </pre>
+
+    <b>Ques 2. Find if the conditions are obeyed or not?
+        You are given two number first as 
+        A
+         and second as 
+        B
+         and check if both conditions (
+        A
+        <
+        10
+         and 
+        A
+        >
+        B
+        ) are satisfied or not with the help of operators.</b><br>
+
+        <pre><b>Ans.</b>
+            const Is_Valid = (a,b) => {
+                return (a<10 && a>b);
+             };
+        </pre> 
+        
+    <b>Ques 3. Check the conditons
+        You are given two numbers 
+        A
+         and 
+        B
+        . You need to do the following checks:
+        
+       1. if both are divisible by 10 console true.
+       2. if both are not divisible by 10 console false.
+       3. if one of them only is divisible by 10 console true.
+        Use operator to do this.</b><br>
+      
+    <pre><b>Ans.</b>
+            const Check = (A, B) => 
+        {
+           if(A%10 === 0 && B%10 === 0){
+           return true;
+        }
+          else if (A%10 !==0 && B%10 !==0){
+          return false;
+        }
+          else{
+          return true;
+        }
+     };
+    </pre>    
+
+    <b>Ques 4. Find the first digit of a 4 digit number
+        You are provided a four digit number N only. Your task is to print out the first digit of that number.
+        
+        Note: You have to complete First_Digit function. No need to take any input.</b><br>
+    
+    <pre><b>Ans.</b>    
+            
+          const First_Digit = (n) => {
+          return parseInt(n/1000);
+        };  
+    </pre>   
+
+    <b>Ques 5. Find the last digit of a 4 digit number
+        You are provided a four digit number N only. Your task is to print out the last digit of that number.</b><br>
+     
+    <pre><b>Ans.</b>
+        const Last_Digit = (n) => {
+            return parseInt(n % 10);
+         };
+    </pre>  
+    
+    <b>Ques 6.Find the remainder
+        You are provided with two numbers 
+        A
+         and 
+        B
+         where 
+        A
+         as  divisor and 
+        B
+         as  dividend.Your task is find the remainder.</b><br>
+
+    <pre><b>Ans.</b>
+        const Find_the_remainder = (a,b) => {
+            return b%a ;
+        };
+        
+    </pre>    
+    
+    <b>Ques 7. Multipy two Numbers
+        You are provided with two numbers 
+        A
+         and 
+        B
+        . Your task is to multiply these two numbers.</b><br>
+
+    <pre><b>Ans.</b>
+        const Multiply_two_number = (a,b) => {
+            return a*b;
+        };  
+    
+    </pre>    
+    
+    <b>Ques 8. Marks Calculator
+        Shyam has got his marks in three subjects as 
+        A
+        , 
+        B
+        , and 
+        C
+         (out of 100).Write a program to calculate his total marks and his average.</b><br>
+
+    <pre><b>Ans.</b>
+            
+           const Sum = (A, B, C) => 
+         {
+           return A+B+C;
+         };
+
+           const Average = (A, B, C) => 
+         {
+           return (A+B+C)/3;
+         };
+    </pre>     
+</body>
+</html>
